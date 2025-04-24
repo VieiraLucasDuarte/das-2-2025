@@ -169,5 +169,35 @@ S3: Armazenamento de objetos (não é um sistema de arquivos).
 EFS (Elastic File System): File share para sistemas Linux. Usa o protocolo NFSv4 e você paga apenas pelo armazenamento utilizado.
 FSx: File share que pode ser usado com Windows, pois suporta protocolos como SMB.
 
+07/04
+
+EBS hd do servidor
+
+As regiões da AWS são compostas por zonas de disponibilidade (AZs), geralmente pelo menos três por região.
+HPC (High Performance Computing) é uma abordagem em que servidores são organizados em clusters, ficando fisicamente próximos (às vezes no mesmo rack ou até na mesma máquina), com o objetivo de minimizar a latência e acelerar o processamento de cargas pesadas.
+Alta disponibilidade com Spread significa distribuir as instâncias entre múltiplas AZs para garantir tolerância a falhas, o que aumenta a resiliência mas pode gerar mais latência.
+Partitionamento é usado por sistemas como Apache Kafka, Cassandra e Spark, que realizam processamento de dados em larga escala ou em tempo real.
+Sharding significa dividir os dados entre vários servidores — esses servidores ficam próximos uns dos outros para manter a performance. É uma solução intermediária entre um cluster e o spread, ideal para ferramentas distribuídas.
+Modelos de instância EC2:
+On-demand: paga-se somente pelo tempo de uso, sem compromissos.
+Reserved Instances: compromete-se com o uso específico de instâncias por um período determinado. Oferece grandes descontos, especialmente com pagamento antecipado.
+Savings Plans: modelo flexível de compromisso com uso computacional em troca de descontos, sem travar em uma instância específica.
+Spot Instances: você compra capacidade ociosa com grande desconto, mas a AWS pode interromper essas instâncias com pouco aviso, normalmente com 2 minutos de antecedência.
+Segurança:
+A proteção das máquinas não deve depender de intervenção manual. As medidas de segurança devem ser automatizadas para garantir a consistência e a confiabilidade.
+
+10/04
+
+BANCO DE DADOS – Escalabilidade e Modelagem
+Escalar um banco de dados é sempre um desafio. É preciso considerar quanto armazenamento será necessário, qual estrutura de dados será adotada e qual nível de latência é aceitável. A solução precisa ser flexível o suficiente para lidar com diferentes modelos de dados.
+No caso dos bancos relacionais, que nem sempre têm suporte completo para escalabilidade nativa na nuvem, a AWS oferece o RDS (Relational Database Service), um serviço gerenciado para implantar bancos como MySQL, PostgreSQL, Oracle, SQL Server, entre outros.
+Se preferir, é possível criar uma instância EC2 (máquina virtual) e instalar o banco de dados manualmente, o que seria uma abordagem não gerenciada. Porém, o uso de serviços gerenciados simplifica bastante a manutenção, backups e escalabilidade.
+No universo não relacional, a AWS oferece o DynamoDB, um banco NoSQL altamente escalável, usado inclusive pela própria amazon.com. Outros exemplos de bancos especializados incluem:
+Amazon Neptune: banco orientado a grafos.
+Serviços de blockchain: voltados para registros descentralizados.
+Amazon ElastiCache: armazena cópias dos dados em memória para respostas muito rápidas, ideal para caching.
+Tipos de escalabilidade:
+Escalabilidade vertical: aumentar os recursos (CPU, memória, etc.) de um único servidor.
+Escalabilidade horizontal: criar réplicas do banco de dados, distribuindo a carga entre várias instâncias.
 
 
