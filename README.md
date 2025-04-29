@@ -200,4 +200,21 @@ Tipos de escalabilidade:
 Escalabilidade vertical: aumentar os recursos (CPU, memória, etc.) de um único servidor.
 Escalabilidade horizontal: criar réplicas do banco de dados, distribuindo a carga entre várias instâncias.
 
+17/04
+
+Pooling de Conexões: aprimora a escalabilidade utilizando um RDS Proxy entre a aplicação e o banco de dados, evitando a sobrecarga do servidor causada por múltiplas conexões simultâneas.
+Backups no RDS: podem ser automáticos (realizados a cada 5 dias, com período de retenção configurável entre 7 e 35 dias) ou por snapshot (manuais, com retenção indefinida).
+KMS (Key Management Service): serviço de gerenciamento de chaves, atuando como um cofre seguro para armazenamento e controle de chaves criptográficas.
+Criptografia Simétrica: utiliza a mesma chave tanto para criptografar quanto para descriptografar os dados.
+Criptografia Assimétrica: utiliza pares de chaves distintas — uma pública para criptografar e uma privada para descriptografar (ou vice-versa).
+DynamoDB: banco de dados NoSQL, serverless, com desempenho de latência de milissegundos em um único dígito. Indicado para arquiteturas orientadas a eventos. Suporta configuração ativo/ativo, possui criptografia automática por padrão e usa IAM roles para autenticação de acesso.
+Redshift: banco de dados orientado a data warehouse, otimizado para consultas analíticas complexas e dados históricos.
+Outros bancos de dados oferecidos pela AWS:
+DocumentDB: compatível com MongoDB
+Keyspaces: compatível com Apache Cassandra
+MemoryDB: banco de dados em memória com alta performance
+Neptune: banco de dados para grafos
+Timestream: banco de dados de séries temporais
+Quantum Ledger Database (QLDB): banco de dados com registro imutável e verificável de transações
+
 
