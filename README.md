@@ -218,3 +218,8 @@ Timestream: banco de dados de séries temporais
 Quantum Ledger Database (QLDB): banco de dados com registro imutável e verificável de transações
 
 
+05/05
+VPC: Ambiente de rede privado criado dentro da AWS.
+CIDR: Especifica o intervalo de endereços IP usados na VPC.
+Sub-rede pública: Subdivisão da rede com acesso direto à internet.
+
