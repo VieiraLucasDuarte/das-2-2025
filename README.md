@@ -227,3 +227,8 @@ VPC: Ambiente de rede privado criado dentro da AWS.
 CIDR: Especifica o intervalo de endereços IP usados na VPC.
 Sub-rede pública: Subdivisão da rede com acesso direto à internet.
 
+26/05
+
+
+Bloco de notas
+
