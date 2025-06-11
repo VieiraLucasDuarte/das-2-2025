@@ -220,12 +220,15 @@ Quantum Ledger Database (QLDB): banco de dados com registro imutável e verific�
 
 05/05
 
-O Amazon Virtual Private Cloud (VPC) permite criar um ambiente de rede isolado dentro da nuvem AWS, onde você pode implantar recursos conforme sua própria configuração de rede. Ele proporciona controle completo sobre aspectos como a definição de faixas de IP, criação de sub-redes e configuração de rotas e conexões de rede.
+VPC é uma rede virtual isolada dentro da nuvem (como na AWS) onde você pode lançar seus recursos, como servidores, bancos de dados e serviços. Ela funciona como uma rede privada que você controla, podendo definir faixas de IP, sub-redes, rotas, regras de segurança, etc.
+
+CIDR (Classless Inter-Domain Routing)
+CIDR é uma forma de representar intervalos de endereços IP. Em vez de usar classes fixas, ele permite especificar o número de bits da máscara de rede, como por exemplo 192.168.0.0/24, que indica 256 endereços IP possíveis. É usado para dividir redes de forma mais flexível e eficiente.
+
+Subnet Pública
+É uma sub-rede dentro da VPC que permite acesso direto à internet. Recursos lançados nela (como servidores) podem se comunicar com a internet pública, geralmente através de um Internet Gateway. Ela é usada quando você precisa que seus serviços sejam acessíveis externamente.
 
 
-VPC: Ambiente de rede privado criado dentro da AWS.
-CIDR: Especifica o intervalo de endereços IP usados na VPC.
-Sub-rede pública: Subdivisão da rede com acesso direto à internet.
 
 26/05
 
