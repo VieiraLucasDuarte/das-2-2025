@@ -280,11 +280,15 @@ Exemplo de algoritmo: RSA.
 09/06
 
 Laboratorios Canva
+
 Guided lab: Creating a Highly Available Environment
+
 Challenge (Café) lab: Creating a Scalable and Highly Available Environment for the Café
 
 12/06
 
 Laboratorios Canva
+
 Guided lab: Creating a Highly Available Environment
+
 Challenge (Café) lab: Creating a Scalable and Highly Available Environment for the Café
