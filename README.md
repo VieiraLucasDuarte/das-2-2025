@@ -228,18 +228,63 @@ CIDR é uma forma de representar intervalos de endereços IP. Em vez de usar cla
 Subnet Pública
 É uma sub-rede dentro da VPC que permite acesso direto à internet. Recursos lançados nela (como servidores) podem se comunicar com a internet pública, geralmente através de um Internet Gateway. Ela é usada quando você precisa que seus serviços sejam acessíveis externamente.
 
+12/05
 
+Laboratorios Canva
+
+Guided lab: Creating a Virtual Private Cloud
+Challenge (Cafe) lab: Creating a VPC Networking Environment for the Café
+
+15/05
+
+Laboratorios Canva
+
+Guided lab: Creating a Virtual Private Cloud
+Challenge (Cafe) lab: Creating a VPC Networking Environment for the Café
+
+19/05
+
+VPC Peering
+É uma conexão de rede entre duas VPCs (na mesma ou em contas diferentes) que permite que elas se comuniquem entre si usando IPs privados. Funciona como uma ponte segura entre redes, mas não permite transitar tráfego por uma terceira VPC (sem roteamento específico). Ideal para comunicação entre sistemas diferentes que estão em VPCs separadas.
+
+AWS VPN Site-to-Site
+É uma conexão segura entre a sua rede local (on-premises) e uma VPC na AWS, feita por meio de um túnel VPN IPsec. Essa conexão passa pela internet, mas é criptografada. É usada para integrar sua infraestrutura local com a nuvem de forma rápida e segura.
+
+AWS Direct Connect
+É uma conexão de rede física (dedicada) entre sua rede local e a AWS. Diferente da VPN, ela não passa pela internet, oferecendo maior estabilidade, velocidade e segurança. É ideal para empresas com alta demanda de tráfego ou que precisam de conexões mais confiáveis com a nuvem.
 
 26/05
 
-
-Bloco de notas
+IAM Groups
+São grupos usados para organizar usuários no AWS IAM (Identity and Access Management). Você pode atribuir permissões a um grupo, e todos os usuários dentro dele herdam essas permissões. Isso facilita o gerenciamento de acessos (ex: grupo "Desenvolvedores" com acesso ao EC2).
+Roles - AWS STS (Security Token Service)
+As IAM Roles são permissões temporárias que podem ser assumidas por usuários, serviços da AWS ou até contas externas.
+O AWS STS permite emitir credenciais temporárias para essas roles, garantindo segurança e controle de acesso dinâmico.
+Exemplo: uma aplicação assume uma role por 1 hora para acessar o S3.
+É um serviço de autenticação e gerenciamento de usuários. Permite criar logins para apps web e mobile, com suporte a login social (Google, Facebook) ou login direto (email/senha).
+Ele cuida da autenticação, autorização e até do armazenamento de usuários, funcionando como um "login pronto para uso".
 
 29/05
 
+Criptografia Simétrica
+Nesse tipo de criptografia, a mesma chave é usada tanto para criptografar quanto para descriptografar os dados.
+É rápida e eficiente, mas exige que a chave seja compartilhada de forma segura entre as partes.
+Exemplo de uso: criptografia de arquivos ou bancos de dados.
+Exemplo de algoritmo: AES (Advanced Encryption Standard).
 
-02/06
+Aqui são usadas duas chaves diferentes, uma pública (para criptografar) e uma privada (para descriptografar).
+É mais segura para comunicação entre partes que não se conhecem, mas é mais lenta.
+Muito usada em conexões seguras, autenticação e certificados digitais.
+Exemplo de algoritmo: RSA.
 
+09/06
 
-- Log
+Laboratorios Canva
+Guided lab: Creating a Highly Available Environment
+Challenge (Café) lab: Creating a Scalable and Highly Available Environment for the Café
 
+12/06
+
+Laboratorios Canva
+Guided lab: Creating a Highly Available Environment
+Challenge (Café) lab: Creating a Scalable and Highly Available Environment for the Café
